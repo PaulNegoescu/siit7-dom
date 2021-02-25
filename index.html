@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <article class="counter">
+        <p data-counter-display>0</p>
+        <button data-counter-button="decrement">-</button>
+        <button data-counter-button="increment">+</button>
+    </article>
+
+    <article class="bmi">
+        <!-- kg / m^2 -->
+        <form action="" data-bmi-form>
+            <p>
+                <label for="greutate">Greutate</label>
+                <input type="number" step=".1" id="greutate" name="greutate">
+            </p>
+            <p>
+                <label for="inaltime">Inaltime</label>
+                <input type="number" step=".01" id="inaltime" name="inaltime">
+            </p>
+            <p>
+                <button type="submit">Calculeaza</button>
+            </p>
+            <p data-bmi-display></p>
+        </form>
+    </article>
+
+
+</body>
+
+</html>
